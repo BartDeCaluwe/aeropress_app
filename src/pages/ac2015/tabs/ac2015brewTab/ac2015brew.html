@@ -17,7 +17,8 @@
       </ion-col>
     </ion-row>
     <ion-row>
-      <ion-col offset-10>
+      <ion-col width-10></ion-col>
+      <ion-col width-80>
         <p *ngIf="started">Time Remaining: {{ timeForTimer }}</p>
         <p *ngIf="started === false">Press the start timer button to start brewing!</p>
         <p *ngIf="step1">Add 60g water and wiggle!</p>
@@ -26,6 +27,7 @@
         <p *ngIf="step4">Press down!</p>
         <p *ngIf="done">Done! Enjoy your coffee!</p>
       </ion-col>
+      <ion-col width-10></ion-col>      
     </ion-row>
   </ion-grid>
 </ion-content>
