@@ -2,7 +2,6 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
-import { Page2 } from '../pages/page2/page2';
 import { Ac2015Page } from '../pages/ac2015/ac2015';
 import { Ac2015_2Page } from '../pages/ac2015_2/ac2015_2';
 

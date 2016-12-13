@@ -10,21 +10,21 @@
 <ion-content padding>
   <ion-grid>
     <ion-row responsive-sm>
-      <ion-col>
+      <ion-col offset-10>
         <button ion-button primary color="secondary" (click)="brew()">Start Timer</button>
         <!--<button ion-button primary (click)="pauseTimer(this.timeForTimer)">Pause Timer</button>-->
         <button ion-button primary color="danger" (click)="stopTimer()">Stop Timer</button>
       </ion-col>
     </ion-row>
     <ion-row>
-      <ion-col>
-        <h1 *ngIf="started">Time Remaining: {{ timeForTimer }}</h1>
-        <h1 *ngIf="started === false">Press the start timer button to start brewing!</h1>
-        <h1 *ngIf="step1">Add 60g water and wiggle!</h1>
-        <h1 *ngIf="step2">Let bloom for 30s!</h1>
-        <h1 *ngIf="step3">Add the rest of the water!</h1>
-        <h1 *ngIf="step4">Press down!</h1>
-        <h1 *ngIf="done">Done! Enjoy your coffee!</h1>
+      <ion-col offset-10>
+        <p *ngIf="started">Time Remaining: {{ timeForTimer }}</p>
+        <p *ngIf="started === false">Press the start timer button to start brewing!</p>
+        <p *ngIf="step1">Add 60g water and wiggle!</p>
+        <p *ngIf="step2">Let bloom for 30s!</p>
+        <p *ngIf="step3">Add the rest of the water!</p>
+        <p *ngIf="step4">Press down!</p>
+        <p *ngIf="done">Done! Enjoy your coffee!</p>
       </ion-col>
     </ion-row>
   </ion-grid>
