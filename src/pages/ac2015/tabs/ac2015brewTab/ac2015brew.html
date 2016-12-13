@@ -16,7 +16,7 @@
         <button ion-button primary color="danger" (click)="stopTimer()">Stop Timer</button>
       </ion-col>
     </ion-row>
-    <ion-row>
+    <ion-row responsive-sm>
       <ion-col width-10></ion-col>
       <ion-col width-80>
         <p *ngIf="started">Time Remaining: {{ timeForTimer }}</p>

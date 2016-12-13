@@ -4,6 +4,7 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { Ac2015Page } from '../pages/ac2015/ac2015';
 import { Ac2015_2Page } from '../pages/ac2015_2/ac2015_2';
+import { RecipeListPage } from '../pages/recipe-list/recipe-list';
 
 
 @Component({
@@ -12,7 +13,7 @@ import { Ac2015_2Page } from '../pages/ac2015_2/ac2015_2';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = Ac2015Page;
+  rootPage: any = RecipeListPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -21,6 +22,7 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
+      { title: 'List of Recipes', component: RecipeListPage },
       { title: 'Aeropress Championship 2015 1st', component: Ac2015Page },
       { title: 'Aeropress Championship 2015 2nd', component: Ac2015_2Page },
     ];

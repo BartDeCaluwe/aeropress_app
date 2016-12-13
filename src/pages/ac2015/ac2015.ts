@@ -22,8 +22,6 @@ export class Ac2015Page {
     this.tab2 = Ac2015brewPage;
    }
 
-  ionViewDidLoad() {
-    console.log('Hello Ac2015Page Page');
-  }
+  ionViewDidLoad() {  }
 
 }

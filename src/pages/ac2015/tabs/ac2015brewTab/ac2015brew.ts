@@ -47,7 +47,7 @@ export class Ac2015brewPage {
     this.started = false;
     this.timeForTimer = 0;
     clearInterval(this.timer);
-    this.clearInstrucions();
+    this.clearInstructions();
   }
 
   brew() {
@@ -98,7 +98,7 @@ export class Ac2015brewPage {
     }, this.stepTime);
   }
 
-  clearInstrucions() {
+  clearInstructions() {
     this.step1 = false;
     this.step2 = false;
     this.step3 = false;
