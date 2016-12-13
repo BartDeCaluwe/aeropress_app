@@ -18,14 +18,14 @@
         </ion-row>
         <ion-row>
             <ion-col>
-                <h1 *ngIf="started">Time Remaining: {{ timeForTimer }}</h1>
-                <h1 *ngIf="started === false">Press the start timer button to start brewing!</h1>
-                <h1 *ngIf="step1">
+                <p *ngIf="started">Time Remaining: {{ timeForTimer }}</p>
+                <p *ngIf="started === false">Press the start timer button to start brewing!</p>
+                <p *ngIf="step1">
                     Add 50-60g of water <br> Stir five times <br> Allow 25 seconds of bloom <br>
-                </h1>
-                <h1 *ngIf="step2">Add the rest of the water in 20 seconds</h1>
-                <h1 *ngIf="step3">Press down!</h1>
-                <h1 *ngIf="done">Done! Enjoy your coffee!</h1>
+                </p>
+                <p *ngIf="step2">Add the rest of the water in 20 seconds</p>
+                <p *ngIf="step3">Press down!</h1>
+                <p *ngIf="done">Done! Enjoy your coffee!</p>
             </ion-col>
         </ion-row>
     </ion-grid>
