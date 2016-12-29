@@ -16,11 +16,14 @@
 
 <ion-content padding>
   <ion-list>
-    <button ion-item (click)="navigateToAc2015Page()">
-      Aeropress Championship 2015 1st place
+    <button ion-item detail-none id="toggleAc2015" (click)="toggleAc2015()">
+      Aeropress Championship 2015
     </button>
-    <button ion-item (click)="navigateToAc2015_2Page()">
-      Aeropress Championship 2015 2nd place
+    <button *ngIf="show2015" ion-item (click)="navigateToAc2015Page()">
+      1st place
+    </button>
+    <button *ngIf="show2015" ion-item (click)="navigateToAc2015_2Page()">
+      2nd place
     </button>
   </ion-list>
 </ion-content>

@@ -14,6 +14,7 @@ import { Ac2015_2Page } from '../ac2015_2/ac2015_2';
   templateUrl: 'recipe-list.html'
 })
 export class RecipeListPage {
+  show2015: boolean = false;
   
   constructor(public navCtrl: NavController) {}
 
@@ -25,5 +26,9 @@ export class RecipeListPage {
 
   navigateToAc2015_2Page(){
     this.navCtrl.push(Ac2015_2Page);
+  }
+
+  toggleAc2015(){
+    this.show2015 = !this.show2015;
   }
 }

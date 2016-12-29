@@ -1,0 +1,34 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title>Aeropress Championship 2nd</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-grid>
+        <ion-row responsive-sm>
+            <ion-col>
+                <button ion-button primary color="secondary" (click)="brew()">Start Timer</button>
+                <!--<button ion-button primary (click)="pauseTimer(this.timeForTimer)">Pause Timer</button>-->
+                <button ion-button primary color="danger" (click)="stopTimer()">Stop Timer</button>
+            </ion-col>
+        </ion-row>
+        <ion-row responsive-sm>
+            <ion-col width-10></ion-col>
+            <ion-col width-80>
+                <p *ngIf="started">Time Remaining: {{ timeForTimer }}</p>
+                <p *ngIf="started === false">Press the start timer button to start brewing!</p>
+                <p *ngIf="step1">
+                    Add 50-60g of water <br> Stir five times <br> Allow 25 seconds of bloom <br>
+                </p>
+                <p *ngIf="step2">Add the rest of the water in 20 seconds</p>
+                <p *ngIf="step3">Press down!</p>
+                <p *ngIf="done">Done! Enjoy your coffee!</p>
+            </ion-col>
+            <ion-col width-10></ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
