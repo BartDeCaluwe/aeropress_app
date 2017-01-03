@@ -52,7 +52,8 @@
         <ion-list>
           <ion-list-header>
             Coffee:
-            <ion-badge item-right>{{ coffee }}g</ion-badge>
+            <ion-badge *ngIf="metric" item-right>{{ coffee }}g</ion-badge>
+            <ion-badge *ngIf="!metric" item-right>{{ coffee }}oz</ion-badge>
           </ion-list-header>
           <ion-item>
             <ion-range max="{{maxCoffee}}" [(ngModel)]="coffee" (ionChange)="calculateWater()">
@@ -68,7 +69,8 @@
         <ion-list>
           <ion-list-header>
             Water:
-            <ion-badge item-right>{{ water }}g</ion-badge>
+            <ion-badge *ngIf="metric" item-right>{{ water }}g</ion-badge>
+            <ion-badge *ngIf="!metric" item-right>{{ water }} fl oz</ion-badge>
           </ion-list-header>
           <ion-item>
             <ion-range max="1000" debounce="15" [(ngModel)]="water" (ionChange)="calculateCoffee()">
