@@ -3,9 +3,9 @@ import { Vibration } from 'ionic-native';
 import { NavController } from 'ionic-angular';
 
 @Component({
-  templateUrl: './ac2015_2brew.html'
+  templateUrl: './ac2015_3brew.html'
 })
-export class Ac2015_2brewPage {
+export class Ac2015_3brewPage {
   myTimeout: any;
   timeForTimer: number;
   timer: any;

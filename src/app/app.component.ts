@@ -5,6 +5,7 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 import { Ac2015Page } from '../pages/ac2015/ac2015';
 import { Ac2015_2Page } from '../pages/ac2015_2/ac2015_2';
 import { RecipeListPage } from '../pages/recipe-list/recipe-list';
+import { CoffeeRatioPage } from '../pages/coffee-ratio/coffee-ratio';
 
 
 @Component({
@@ -25,6 +26,7 @@ export class MyApp {
       { title: 'List of Recipes', component: RecipeListPage },
       { title: 'Aeropress Championship 2015 1st', component: Ac2015Page },
       { title: 'Aeropress Championship 2015 2nd', component: Ac2015_2Page },
+      { title: 'Coffee ratio', component: CoffeeRatioPage },
     ];
 
   }

@@ -8,9 +8,9 @@ import { NavController } from 'ionic-angular';
   Ionic pages and navigation.
 */
 @Component({
-    templateUrl: 'ac2015_2recipe.html'
+    templateUrl: 'ac2015_3recipe.html'
 })
-export class Ac2015_2recipePage {
+export class Ac2015_3recipePage {
 
     constructor(public navCtrl: NavController) {
 

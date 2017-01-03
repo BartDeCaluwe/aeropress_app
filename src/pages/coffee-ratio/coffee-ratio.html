@@ -1,0 +1,75 @@
+<!--
+  Generated template for the CoffeeRatio page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Coffee - Water Calculator</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-list radio-group [(ngModel)]="ratio" (ionChange)="calculateWater(ratio)">
+          <ion-list-header>
+            Coffee - Water ratio
+          </ion-list-header>
+
+          <ion-item>
+            <ion-label>1:15</ion-label>
+            <ion-radio checked="true" value="15"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>1:16</ion-label>
+            <ion-radio value="16"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>1:17</ion-label>
+            <ion-radio value="17"></ion-radio>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-list>
+          <ion-list-header>
+            Coffee:
+            <ion-badge item-right>{{ coffee }}</ion-badge>
+          </ion-list-header>
+          <ion-item>
+            <ion-range max="{{maxCoffee}}" [(ngModel)]="coffee" (ionChange)="calculateWater()">
+              <ion-icon range-left small name="cafe"></ion-icon>
+              <ion-icon range-right name="cafe"></ion-icon>
+            </ion-range>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-list>
+          <ion-list-header>
+            Water:
+            <ion-badge item-right>{{ water }}</ion-badge>
+          </ion-list-header>
+          <ion-item>
+            <ion-range max="1000" [(ngModel)]="water" (ionChange)="calculateCoffee()">
+              <ion-icon range-left small name="water"></ion-icon>
+              <ion-icon range-right name="water"></ion-icon>
+            </ion-range>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
