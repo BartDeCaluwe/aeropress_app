@@ -60,6 +60,25 @@ export class CoffeeRatioPage {
     this.water = this.water * this.gramsToFlOz;
   }
 
+  decrementCoffee(){
+    this.coffee--;
+    this.calculateWater();
+  }
+
+  incrementCoffee(){
+    this.coffee++;
+    this.calculateWater();
+  }
+  decrementWater(){
+    this.water--;
+    this.calculateCoffee();
+  }
+
+  incrementWater(){
+    this.water++;
+    this.calculateCoffee();    
+  }
+
   openSettingsModal() {
     let settings = this.modalCtrl.create(SettingsModalPage, { showDecimals: this.showDecimals, metric: this.metric });
     settings.onDidDismiss(data => {
