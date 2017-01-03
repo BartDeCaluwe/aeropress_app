@@ -26,7 +26,7 @@ export class MyApp {
       { title: 'List of Recipes', component: RecipeListPage },
       { title: 'Aeropress Championship 2015 1st', component: Ac2015Page },
       { title: 'Aeropress Championship 2015 2nd', component: Ac2015_2Page },
-      { title: 'Coffee ratio', component: CoffeeRatioPage },
+      { title: 'Coffee ratio calculator', component: CoffeeRatioPage },
     ];
 
   }

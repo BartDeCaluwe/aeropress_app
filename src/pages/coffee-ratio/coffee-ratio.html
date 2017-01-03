@@ -7,7 +7,15 @@
 <ion-header>
 
   <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
     <ion-title>Coffee - Water Calculator</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="openSettingsModal()">
+      <ion-icon name="settings"></ion-icon>
+        </button>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
@@ -44,7 +52,7 @@
         <ion-list>
           <ion-list-header>
             Coffee:
-            <ion-badge item-right>{{ coffee }}</ion-badge>
+            <ion-badge item-right>{{ coffee }}g</ion-badge>
           </ion-list-header>
           <ion-item>
             <ion-range max="{{maxCoffee}}" [(ngModel)]="coffee" (ionChange)="calculateWater()">
@@ -60,7 +68,7 @@
         <ion-list>
           <ion-list-header>
             Water:
-            <ion-badge item-right>{{ water }}</ion-badge>
+            <ion-badge item-right>{{ water }}g</ion-badge>
           </ion-list-header>
           <ion-item>
             <ion-range max="1000" [(ngModel)]="water" (ionChange)="calculateCoffee()">

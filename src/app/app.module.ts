@@ -12,6 +12,7 @@ import { Ac2015_3brewPage } from '../pages/ac2015_3/tabs/ac2015_3brewTab/ac2015_
 import { Ac2015_3recipePage } from '../pages/ac2015_3/tabs/ac2015_3recipeTab/ac2015_3recipe';
 import { RecipeListPage } from '../pages/recipe-list/recipe-list';
 import { CoffeeRatioPage } from '../pages/coffee-ratio/coffee-ratio';
+import { SettingsModalPage } from '../pages/settingsModal/settingsModal'
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { CoffeeRatioPage } from '../pages/coffee-ratio/coffee-ratio';
     CoffeeRatioPage,
     Ac2015_3Page,
     Ac2015_3brewPage,
-    Ac2015_3recipePage
+    Ac2015_3recipePage,
+    SettingsModalPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -44,7 +46,8 @@ import { CoffeeRatioPage } from '../pages/coffee-ratio/coffee-ratio';
     CoffeeRatioPage,
     Ac2015_3Page,
     Ac2015_3brewPage,
-    Ac2015_3recipePage
+    Ac2015_3recipePage,
+    SettingsModalPage
   ],
   providers: [{ provide: ErrorHandler, useClass: IonicErrorHandler }]
 })

@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Settings</ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="close()">
+        <span color="primary" showWhen="ios">Close</span>
+        <ion-icon name="md-close" showWhen="android,windows"></ion-icon>
+      </button>
+</ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-item>
+      <ion-label> Show decimals</ion-label>
+      <ion-toggle [(ngModel)]="showDecimals"></ion-toggle>
+    </ion-item>
+</ion-content>
