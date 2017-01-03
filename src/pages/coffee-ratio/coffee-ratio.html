@@ -71,7 +71,7 @@
             <ion-badge item-right>{{ water }}g</ion-badge>
           </ion-list-header>
           <ion-item>
-            <ion-range max="1000" debounce="20" [(ngModel)]="water" (ionChange)="calculateCoffee()">
+            <ion-range max="1000" debounce="15" [(ngModel)]="water" (ionChange)="calculateCoffee()">
               <ion-icon range-left small name="water"></ion-icon>
               <ion-icon range-right name="water"></ion-icon>
             </ion-range>
